@@ -27,6 +27,8 @@ set(SOURCES "audio_codecs/audio_codec.cc"
 
 set(INCLUDE_DIRS "." "display" "audio_codecs" "protocols" "audio_processing")
 
+set(EXTRA_COMPONENT_DIRS components/w5500)
+
 # 添加 IOT 相关文件
 file(GLOB IOT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/iot/things/*.cc)
 list(APPEND SOURCES ${IOT_SOURCES})
@@ -121,6 +123,12 @@ elseif(CONFIG_BOARD_TYPE_ESP32P4_WIFI6_Touch_LCD_XC)
     set(BOARD_TYPE "waveshare-p4-wifi6-touch-lcd-xc")
 elseif(CONFIG_BOARD_TYPE_BREAD_COMPACT_WIFI_LCD)
     set(BOARD_TYPE "bread-compact-wifi-lcd")
+elseif(CONFIG_BOARD_TYPE_BREAD_COMPACT_ML307)
+    set(BOARD_TYPE "bread-compact-ml307")
+elseif(CONFIG_BOARD_TYPE_BREAD_COMPACT_ETH)
+    set(BOARD_TYPE "bread-compact-eth")
+elseif(CONFIG_BOARD_TYPE_BREAD_COMPACT_ESP32)
+    set(BOARD_TYPE "bread-compact-esp32")
 elseif(CONFIG_BOARD_TYPE_TUDOUZI)
     set(BOARD_TYPE "tudouzi")
 elseif(CONFIG_BOARD_TYPE_LILYGO_T_CIRCLE_S3)
