@@ -17,6 +17,9 @@
         "CHECK_NEW_VERSION_FAILED":"检查新版本失败，将在 %d 秒后重试：%s",
         "SWITCH_TO_WIFI_NETWORK":"切换到 Wi-Fi...",
         "SWITCH_TO_4G_NETWORK":"切换到 4G...",
+        "CONNECTING_ETHERNET":"连接以太网...",
+        "ETHERNET_CONNECTED":"以太网已连接",
+        "ETHERNET_CONNECT_FAILED":"以太网连接失败",
 
         "STANDBY":"待命",
         "CONNECT_TO":"连接 ",
